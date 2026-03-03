@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="tr">
+  <head>
+    <!-- UTF-8 önerilir (metin/karakter bozulmalarını önler) -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YMH354 - CSS ile Tasarım Örneği</title>
+
+    <!-- External CSS (en önerilen yöntem) -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">İçeriğe atla</a>
+
+    <header class="site-header">
+      <div class="container header-inner">
+        <h1 class="brand">YMH354</h1>
+        <p class="tagline">Designing with CSS: Layout, Selectors, Box Model</p>
+      </div>
+    </header>
+
+    <nav class="site-nav" aria-label="Ana menü">
+      <div class="container">
+        <ul class="nav-list">
+          <li><a href="#selectors">Selectors</a></li>
+          <li><a href="#layout">Layout</a></li>
+          <li><a href="#boxmodel">Box Model</a></li>
+          <li><a href="#responsive">Responsive</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main class="container layout" id="content">
+      <article class="card" id="selectors">
+        <h2>1) Selectors + Pseudo-class</h2>
+        <p>
+          Bu paragraf normal akışta. <span class="badge">.class</span> ve
+          <span id="special">#id</span> örneği içeriyor.
+        </p>
+
+        <p class="note">
+          Linkin üzerine gel: <a href="#selectors">hover örneği</a>
+        </p>
+
+        <button class="btn" type="button">Buton</button>
+      </article>
+
+      <aside class="sidebar card" id="layout">
+        <h2>2) Sidebar</h2>
+        <p>
+          Bu alan tipik web sayfası düzenini (header/nav/content/sidebar/footer)
+          göstermeye yarar.
+        </p>
+
+        <div class="callout">
+          <strong>İpucu:</strong> box-sizing: border-box kullanmak hesaplamaları kolaylaştırır.
+        </div>
+      </aside>
+
+      <section class="card" id="boxmodel">
+        <h2>3) Box Model Demo</h2>
+        <div class="box-demo">
+          <div class="box">
+            <p>
+              Bu kutu; <em>content</em>, <em>padding</em>, <em>border</em>, <em>margin</em>
+              bileşenlerini görselleştirir.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="card" id="responsive">
+        <h2>4) Responsive (Media Query)</h2>
+        <p>
+          Ekran daraldığında yerleşim tek sütuna düşecek ve menü daha kompakt görünecek.
+          Tarayıcı genişliğini değiştirip gözlemleyin.
+        </p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <small>© YMH354 Web Design and Programming</small>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,170 @@
+/* Basit bir reset + box model ayarı */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* Alternate box model yaklaşımı */
+}
+
+:root {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  background: #f5f5f5;
+  color: #222;
+}
+
+/* Layout yardımcı sınıfı */
+.container {
+  width: min(1100px, 92%);
+  margin: 0 auto;
+}
+
+/* Skip link (erişilebilirlik) */
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 8px;
+  padding: 8px 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+}
+.skip-link:focus {
+  left: 8px;
+}
+
+/* Header */
+.site-header {
+  background: #ffffff;
+  border-bottom: 1px solid #e6e6e6;
+}
+.header-inner {
+  padding: 18px 0;
+}
+.brand {
+  margin: 0;
+  font-size: 1.6rem;
+}
+.tagline {
+  margin: 6px 0 0;
+  color: #555;
+}
+
+/* Navigation + pseudo-class örnekleri */
+.site-nav {
+  background: #111;
+}
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 14px;
+}
+.nav-list a {
+  display: inline-block;
+  padding: 12px 10px;
+  color: #fff;
+  text-decoration: none;
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  text-decoration: underline;
+}
+
+/* Main layout: grid ile iki sütun + kartlar */
+.layout {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: 2fr 1fr;
+  padding: 18px 0 28px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #e6e6e6;
+  border-radius: 12px;
+  padding: 14px 14px;
+}
+
+/* Sidebar’ın daha üstte görünmesi için grid */
+.sidebar {
+  grid-row: span 2;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.25rem;
+}
+
+/* Class ve ID selector örneği */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px solid #ddd;
+  background: #fafafa;
+  font-size: 0.9rem;
+}
+#special {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.note a:link {
+  color: #0a58ca;
+}
+.note a:visited {
+  color: #6f42c1;
+}
+.note a:hover {
+  background: #fff3cd;
+}
+
+/* Basit buton */
+.btn {
+  padding: 10px 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+/* Box model demo */
+.box-demo {
+  padding: 10px;
+  background: #fafafa;
+  border-radius: 10px;
+  border: 1px dashed #ddd;
+}
+
+.box {
+  width: 100%;
+  padding: 14px;               /* padding */
+  border: 3px solid #111;      /* border */
+  margin: 10px 0;              /* margin */
+  background: #fff;
+}
+
+/* Footer */
+.site-footer {
+  border-top: 1px solid #e6e6e6;
+  background: #fff;
+  padding: 14px 0;
+  color: #555;
+}
+
+/* Responsive: ekran daralınca tek sütun */
+@media screen and (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+  .nav-list {
+    flex-wrap: wrap;
+  }
+}
