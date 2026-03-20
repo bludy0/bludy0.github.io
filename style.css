@@ -1103,7 +1103,6 @@ main {
   }
 }
 
-/* Telefon - küçük ekran */
 @media (max-width: 480px) {
   body {
     font-size: 0.95rem;
