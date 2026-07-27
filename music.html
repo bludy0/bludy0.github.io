@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Yunus Emre Aslan - Müzik portfolyosu, beatmaking ve prodüksiyon çalışmaları." />
+    <meta name="theme-color" content="#0a1a0e" />
+    <meta property="og:title" content="Yunus Emre Aslan - Müzik Portfolyosu" />
+    <meta property="og:description" content="Müzik prodüksiyonu, beatmaking ve yayınlanan çalışmalar." />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="images/profile.jpeg" />
+    <title>Müzik Portfolyosu | Yunus Emre Aslan</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="abstract-bg" aria-hidden="true">
+      <div class="shape shape-1"></div>
+      <div class="shape shape-2"></div>
+      <div class="shape shape-3"></div>
+      <div class="shape shape-4"></div>
+      <div class="shape shape-5"></div>
+      <div class="shape shape-6"></div>
+      <div class="grid-overlay"></div>
+    </div>
+
+    <a class="skip-link" href="#content">İçeriğe atla</a>
+
+    <nav class="navbar" aria-label="Ana menü">
+      <div class="container nav-container">
+        <a href="index.html#header" class="nav-brand">
+          <span class="nav-brand-text">Yunus Emre Aslan</span>
+        </a>
+        <div class="language-toggle">
+          <input type="checkbox" id="lang-toggle" class="lang-checkbox" aria-label="Dili değiştir" />
+          <label for="lang-toggle" class="lang-label" aria-hidden="true">
+            <span class="lang-tr">TR</span>
+            <span class="lang-en">EN</span>
+          </label>
+        </div>
+        <input type="checkbox" id="menu-toggle" class="menu-toggle" aria-label="Menüyü aç/kapat" />
+        <label for="menu-toggle" class="hamburger" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <ul class="nav-list">
+          <li><a href="index.html#about" onclick="closeMenu()" data-tr="Hakkımda" data-en="About">Hakkımda</a></li>
+          <li><a href="index.html#skills" onclick="closeMenu()" data-tr="Yetenekler" data-en="Skills">Yetenekler</a></li>
+          <li><a href="index.html#projects" onclick="closeMenu()" data-tr="Projeler" data-en="Projects">Projeler</a></li>
+          <li><a href="music.html" class="nav-cta-link" onclick="closeMenu()" data-tr="Müzik Çalışmaları" data-en="Music Works">Müzik Çalışmaları</a></li>
+          <li><a href="index.html#contact" onclick="closeMenu()" data-tr="İletişim" data-en="Contact">İletişim</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <header class="header" id="header">
+      <div class="container">
+        <div class="hero">
+          <div class="hero-content">
+            <h1 class="name" data-tr="Müzik Çalışmaları" data-en="Music Works">Müzik Çalışmaları</h1>
+            <p class="title" data-tr="Beatmaking | Prodüksiyon | OST" data-en="Beatmaking | Production | OST">Beatmaking | Prodüksiyon | OST</p>
+            <p class="description" data-tr="Yazılımın yanında müzik prodüksiyonı alanında da aktif olarak çalışıyorum. Bu sayfada yayınladığım playlistleri ve kullandığım temel prodüksiyon araçlarını bulabilirsin." data-en="Besides software, I actively work in music production. On this page you can find the playlists I've published and the main production tools I use.">Yazılımın yanında müzik prodüksiyonı alanında da aktif olarak çalışıyorum.
+              Bu sayfada yayınladığım playlistleri ve kullandığım temel prodüksiyon araçlarını bulabilirsin.
+            </p>
+            <div class="hero-buttons">
+              <a href="index.html" class="cta-btn cta-btn-outline" data-tr="Ana Sayfaya Dön" data-en="Back to Home">Ana Sayfaya Dön</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="container" id="content">
+      <section class="section" id="music">
+        <h2 class="section-title" data-tr="Yayınlar ve Araçlar" data-en="Releases & Tools">Yayınlar ve Araçlar</h2>
+        <div class="section-content">
+          <div class="music-tools">
+            <h3>Araçlar:</h3>
+            <span class="icon-badge icon-emoji music-tool-icon" data-label="FL Studio" aria-label="FL Studio" role="img">&#127929;</span>
+            <span class="icon-badge icon-emoji music-tool-icon" data-label="Logic Pro" aria-label="Logic Pro" role="img">&#127932;</span>
+          </div>
+          <div class="music-grid">
+            <a href="https://www.youtube.com/playlist?list=PLfJ49xFVYrSO-akMo4ikQH3DesOtegH95" target="_blank" rel="noopener" class="music-card">
+              <h3>All OST and Musics</h3>
+              <p>Oyun ve film müzikleri (OST) ile çeşitli türlerde ürettiğim 12 parça.</p>
+            </a>
+            <a href="https://www.youtube.com/playlist?list=PLfJ49xFVYrSMEMykmZSjTGi1jnbGbrR4f" target="_blank" rel="noopener" class="music-card">
+              <h3>Bludy - Short Life</h3>
+              <p>Kendi prodüksiyonlarımdan oluşan 9 parçalık albüm çalışması.</p>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <p><span data-tr="© 2026 Yunus Emre Aslan. Tüm hakları saklıdır." data-en="© 2026 Yunus Emre Aslan. All rights reserved.">© 2026 Yunus Emre Aslan. Tüm hakları saklıdır.</span></p>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
